@@ -6,7 +6,7 @@ library(googlesheets4)
 
 options(
   gargle_oauth_cache = ".secrets",
-  gargle_oauth_email = TRUE,
+  gargle_oauth_email = "pascal.burkhard@gmail.com",
   gargle_verbosity = "debug"
 )
 
