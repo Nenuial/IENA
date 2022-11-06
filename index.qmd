@@ -1,0 +1,11 @@
+---
+title: "Bienvenue"
+listing:
+  contents: results
+  type: table
+  sort-ui: false
+  sort: "order asc"
+  fields: [Epreuve, title]
+---
+
+Vous trouverez sur ce site les résultats pour les épreuves des finales de la Journée de la Jeunesse (19 novembre) et de la finale du Championnat suisse de Dressage catégorie R (20 novembre).
