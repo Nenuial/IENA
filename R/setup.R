@@ -6,7 +6,8 @@ library(googlesheets4)
 
 options(
   gargle_oauth_cache = ".secrets",
-  gargle_oauth_email = TRUE
+  gargle_oauth_email = TRUE,
+  gargle_verbosity = "debug"
 )
 
 setup_classes <- function(result_path) {
