@@ -5,12 +5,12 @@ library(googledrive)
 library(googlesheets4)
 
 options(
-  gargle_oauth_cache = "~/.secrets",
+  gargle_oauth_cache = "~/.secrets/sheets",
   gargle_oauth_email = "pascal.burkhard@gmail.com",
   gargle_verbosity = "debug"
 )
 
-gs4_auth(cache = "~/.secrets")
+gs4_auth(cache = "~/.secrets/sheets")
 
 setup_classes <- function(result_path) {
   class_id <- stringr::str_match(result_path, ".*R.{1,2}sultats_(.{1,3})\\.xls")[,2]
