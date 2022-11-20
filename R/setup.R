@@ -184,7 +184,7 @@ drive_get("Concours/Datafiles/IENA") |>
   dplyr::mutate(Actuel = as.character(Actuel)) |> 
   dplyr::mutate(Actuel = dplyr::if_else(is.na(Actuel), "", Actuel)) -> classes
 
-dir_ls(here("data/"), regexp = ".*R.{1,2}sultats_(.{1,3})\\.xls") -> results
+dir_ls(here("data/"), regexp = ".*R.{1,2}sultats_(\\d{1,2})([ab]?)\\.xls") -> results
 
 results |> 
   purrr::walk(setup_classes)
